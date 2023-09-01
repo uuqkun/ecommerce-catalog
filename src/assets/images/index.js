@@ -1,0 +1,1 @@
+export { default as img } from "../images/mock_image.png";

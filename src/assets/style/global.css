@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+:root { 
+    --bg-male:#D6E6FF ;
+    --bg-female: #FDE2FF;
+    --bg-unavailable: #DCDCDC;
+
+    --accent-clr-male:#002772;
+    --accent-clr-female:#720060 ;
+    --accent-clr-unavailable: #1E1E1E;
+    
+    --clr-white: #FFFFFF;
+}
+
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.bg-female { 
+    background-color: var(--bg-female);
+}
+
+.bg-male { 
+    background-color: var(--bg-male);
+}
+
+.txt-male-accent { 
+    color: var(--accent-clr-male);
+}
+
+.txt-female-accent { 
+    color: var(--accent-clr-female);
+}
+
+
+
