@@ -5,7 +5,7 @@ export default {
   name: "Button",
   props: {
     title: String,
-    category: String,
+    category: Array,
     option: Number,
     clicked: { 
       type: Function, 

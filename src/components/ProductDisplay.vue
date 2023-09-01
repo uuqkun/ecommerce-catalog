@@ -6,39 +6,23 @@ export default {
     components: {
         Product,
     },
-    data() {
-        return {
-            // products: [],
-            // product: []
-        }
-    },
-    methods: {
-        // async getProductData() {
-        //     const response = await fetch("https://fakestoreapi.com/products");
-
-        //     const results = await response.json();
-        //     this.products = results;
-
-        // },
-    },
-    // created() {
-    //     this.getProductData();
-    // }
 }
 
 </script>
 
 <template>
-    <div class="container">
+    <div class="container flex">
         <div class="bg-female" />
 
-        <!-- :title="products['title']" 
-        :description="products['description']" 
-        :price="products['price']" 
-        :image="products['image']"    
-        :category="products['category']" -->
         <Product />
     </div>
 </template>
 
-<style></style>
+<style scoped>
+.container { 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+</style>
