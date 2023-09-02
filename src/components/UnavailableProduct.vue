@@ -10,7 +10,7 @@ export default {
     <div class="container__card-bg-product" />
     <div class="container__notfound flex-center">
 
-      <img src="../assets/images/UnavailableProduct.png" alt="UnavailableProduct">
+      <img src="../assets/images/unavailableProduct.png" alt="UnavailableProduct">
 
       <div class="container__notfound-message flex-center">
         <h1 class="text-header">Cannot found any product to show</h1>
