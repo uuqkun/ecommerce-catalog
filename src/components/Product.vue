@@ -34,19 +34,20 @@ export default {
         if (results !== null || results !== undefined || response.ok) {
           this.isReady = true
         }
-
+        
         // Save products data to local state
         this.products = results;
         this.product = this.products[this.index]
-
+        
+        
         if (this.product['category'] === "men's clothing") this.isMaleProduct = true;
         else this.isMaleProduct;
       } catch (error) {
         console.error("Terjadi kesalahan: ", error.message)
       }
-
-
-
+      
+      
+      
     },
     nextProduct() {
       if (this.index === this.products.length - 1) {
@@ -55,9 +56,9 @@ export default {
       } else {
         this.product = this.products[this.index++]
       }
-
+      
       const isWomenProduct = this.product['category'] === "women's clothing" || this.product['category'] === "jewelery";
-
+      
       if (this.product['category'] === "men's clothing") {
         this.isMaleProduct = true;
       }
@@ -67,9 +68,9 @@ export default {
       else {
         this.isMaleProduct = true;
       }
-
+      
     },
-    buyProduct() { },
+    buyProduct() {  },
   },
   created() {
     this.getProductData();
@@ -98,7 +99,7 @@ export default {
           <div class="container__card-subheader flex">
             <p class="text-subheader">{{ product['category'] }}</p>
 
-            <Rating />
+            <Rating :rate="this.product['rating']['rate']" :dotBgColor="[isMaleProduct ? 'bg-acc-male' : 'bg-acc-female']" />
           </div>
         </header>
 

@@ -42,6 +42,14 @@
     color: var(--accent-clr-female);
 }
 
+.bg-acc-male { 
+    background-color: var(--accent-clr-male);
+}
+
+.bg-acc-female { 
+    background-color: var(--accent-clr-female);
+}
+
 .flex-center { 
     display: flex;
     justify-content: center;
